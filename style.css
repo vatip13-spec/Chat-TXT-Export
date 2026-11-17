@@ -1,0 +1,66 @@
+.cte-controls .cte-field {
+    display: grid;
+    gap: 0.2rem;
+    margin-block: 0.5rem;
+}
+
+.cte-controls .cte-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-block: 0.5rem;
+}
+
+.cte-controls .cte-rule-row {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr) auto;
+    align-items: center;
+    gap: 0.35rem;
+    margin-block: 0.35rem;
+}
+
+.cte-controls .cte-rule-row input {
+    min-width: 0;
+    width: 100%;
+}
+
+.cte-controls .cte-rule-error:empty,
+.cte-popup .cte-popup-status:empty {
+    display: none;
+}
+
+.cte-controls .cte-add-rule.menu_button,
+.cte-popup .cte-popup-download.menu_button {
+    width: max-content;
+    min-width: max-content;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+.cte-popup .cte-popup-download {
+    margin-top: 0.75rem;
+}
+
+#chat-txt-export-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    padding: 0.35em 0.45em;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: var(--mainFontSize, 1rem);
+    cursor: pointer;
+}
+
+#chat-txt-export-button[hidden] {
+    display: none !important;
+}
+
+#chat-txt-export-button:disabled,
+.cte-popup .cte-popup-download:disabled {
+    opacity: 0.55;
+    cursor: wait;
+}
